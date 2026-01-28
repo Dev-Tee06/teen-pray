@@ -1,6 +1,5 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
-import teenlogo from "../assets/teenlogo.png"; // Make sure this PNG has a transparent background
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -11,14 +10,14 @@ export default function Navbar() {
       : "text-black hover:text-red-600 font-medium";
 
   return (
-    <header className="bg-transparent  z-50">
+    <header className="bg-transparent z-50">
       <nav className="max-w-7xl mx-auto px-6 py-2 flex justify-between items-center">
         {/* Logo / Brand */}
         <NavLink to="/">
           <img
-            src={teenlogo}
+            src="/assets/teenlogo.png"
             alt="Teens-Pray Logo"
-            className=" h-25 md:h-24 lg:h-30 transition-transform hover:scale-110 drop-shadow-lg"
+            className="h-25 md:h-24 lg:h-30 transition-transform hover:scale-110 drop-shadow-lg"
           />
         </NavLink>
 

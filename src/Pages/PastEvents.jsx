@@ -3,112 +3,73 @@ import { motion } from "framer-motion";
 import { FaFire, FaUsers, FaChild } from "react-icons/fa";
 import { useInView } from "react-intersection-observer";
 
-/* ================= COVER IMAGES ================= */
-import tp2 from "../assets/tp2.png"; // Evangelism
-import tp3 from "../assets/tp3.png"; // Children
-import tp6 from "../assets/tp6.png"; // Teens Pray Conference
-
-/* ================= TEENS PRAY 2025 IMAGES ================= */
-import teens1 from "../assets/teens1.jpg";
-import teens2 from "../assets/teens2.jpg";
-import teens6 from "../assets/teens6.jpg";
-import teens8 from "../assets/teens8.jpg";
-import teens10 from "../assets/teens10.jpg";
-import teens11 from "../assets/teens11.jpg";
-import teens12 from "../assets/teens12.jpg";
-import teens13 from "../assets/teens13.jpg";
-import teens14 from "../assets/teens14.jpg";
-import teens15 from "../assets/teens15.jpg";
-import teens16 from "../assets/teens16.jpg";
-import teens20 from "../assets/teens20.jpg";
-
-/* ================= TEENS PRAY 2024 IMAGES ================= */
-
-import pray3 from "../assets/pray3.jpg";
-import pray5 from "../assets/pray5.jpg";
-import pray7 from "../assets/pray7.jpg";
-import pray9 from "../assets/pray9.jpg";
-import pray11 from "../assets/pray11.jpg";
-import pray12 from "../assets/pray12.jpg";
-import pray14 from "../assets/pray14.jpg";
-import pray15 from "../assets/pray15.jpg";
-import pray16 from "../assets/pray16.jpg";
-import pray17 from "../assets/pray17.jpg";
-import pray18 from "../assets/pray18.jpg";
-import pray19 from "../assets/pray19.jpg";
-
-/* ================= EVENT VIDEOS ================= */
-import teenspray2 from "../assets/teenspray2.mp4"; // Outreach
-import teenspray3 from "../assets/teenspray3.mp4"; // Children
-import teenspray4 from "../assets/teenspray4.mp4"; // Teens Pray 2025
-
 /* ================= EVENTS DATA ================= */
 const events = [
   {
     title: "Teens Pray Conference 2025",
     year: 2025,
     type: "conference",
-    coverImage: tp6,
+    coverImage: "/assets/tp6.png",
     icon: <FaFire className="text-red-500 text-3xl" />,
     description:
       "A powerful gathering marked by intense prayer, worship, and spiritual transformation.",
     images: [
-      teens1,
-      teens2,
-      teens6,
-      teens8,
-      teens10,
-      teens11,
-      teens12,
-      teens13,
-      teens14,
-      teens15,
-      teens16,
-      teens20,
+      "/assets/teens1.jpg",
+      "/assets/teens2.jpg",
+      "/assets/teens6.jpg",
+      "/assets/teens8.jpg",
+      "/assets/teens10.jpg",
+      "/assets/teens11.jpg",
+      "/assets/teens12.jpg",
+      "/assets/teens13.jpg",
+      "/assets/teens14.jpg",
+      "/assets/teens15.jpg",
+      "/assets/teens16.jpg",
+      "/assets/teens20.jpg",
     ],
-    video: teenspray4,
+    video: "/assets/teenspray4.mp4",
   },
   {
     title: "Teens Pray Conference 2024",
     year: 2024,
     type: "conference",
-    coverImage: tp6,
+    coverImage: "/assets/tp6.png",
     icon: <FaUsers className="text-orange-500 text-3xl" />,
     description:
       "An unforgettable conference where teenagers encountered God deeply.",
     images: [
-      pray3,
-      pray5,
-      pray7,
-      pray9,
-      pray11,
-      pray12,
-      pray14,
-      pray15,
-      pray16,
-      pray17,
-      pray18,
-      pray19,
+      "/assets/pray3.jpg",
+      "/assets/pray5.jpg",
+      "/assets/pray7.jpg",
+      "/assets/pray9.jpg",
+      "/assets/pray11.jpg",
+      "/assets/pray12.jpg",
+      "/assets/pray14.jpg",
+      "/assets/pray15.jpg",
+      "/assets/pray16.jpg",
+      "/assets/pray17.jpg",
+      "/assets/pray18.jpg",
+      "/assets/pray19.jpg",
     ],
   },
   {
     title: "Children Holy Ghost Meeting",
     year: "all",
     type: "children",
-    coverImage: tp3,
+    coverImage: "/assets/tp3.png",
     icon: <FaChild className="text-orange-500 text-3xl" />,
     description: "Joyful, Spirit-filled meetings where children encounter God.",
-    video: teenspray3,
+    video: "/assets/teenspray3.mp4",
   },
   {
     title: "Evangelism Outreach",
     year: "all",
     type: "outreach",
-    coverImage: tp2,
+    coverImage: "/assets/tp2.png",
     icon: <FaUsers className="text-red-500 text-3xl" />,
     description:
       "Taking the gospel to communities through prayer, love, and action.",
-    video: teenspray2,
+    video: "/assets/teenspray2.mp4",
   },
 ];
 
